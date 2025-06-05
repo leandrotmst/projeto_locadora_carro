@@ -1,0 +1,45 @@
+dict_carros = {
+	"Renault Kwid": 95,        
+	"Volkswagen Gol": 100,    
+	"Chevrolet Onix": 120,    
+	"Hyundai HB20": 130,      
+	"Fiat Uno": 90,
+	"Ford Ka": 100,           
+	"Toyota Etios": 120,      
+	"Peugeot 208": 125,
+	"Nissan March": 110,
+	"Chevrolet Onix Plus": 150,
+	"Hyundai Creta": 220,     
+	"Volkswagen Nivus": 200,
+	"Toyota Corolla Cross": 250,
+	"Honda HR-V": 240,
+	"Jeep Compass": 280,      
+	"Renault Kardian": 210,
+	"Volkswagen Polo": 160,
+	"Nissan Kicks": 230,
+	"Fiat Pulse": 190,
+	"BMW X5": 700,
+	"Mercedes-Benz GLA 250": 650,
+	"Audi Q5": 600,           
+	"Land Rover Discovery": 800,
+	"Porsche Cayenne": 1000,
+	"Volvo XC60": 750,
+	"Range Rover Velar": 950,
+	"Tesla Model Y": 850,
+	"Jaguar F-Pace": 900,
+	"Ram 2500 Limited": 1000,
+	"Chevrolet Celta": 85,
+	"Chevrolet Classic": 80,
+	"Peugeot 207": 85,
+	"Fiat Mobi": 90,         
+	"Toyota Corolla": 200,
+	"Honda Civic": 210,
+	"Ford Ranger": 360,
+	"Toyota Hilux": 350,
+	"BMW X1": 500
+}
+
+if __name__ == '__main__':
+	for carro, preco in dict_carros.items():
+			print(f"{carro}: R${preco}")
+	print(f"\nTotal de modelos únicos listados: {len(dict_carros)}")
