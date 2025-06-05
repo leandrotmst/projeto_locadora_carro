@@ -11,13 +11,12 @@ def register(menu:tuple):
         if op == 1:
             nome = input('Digite o nome a ser registrado: ')
             email = input('Digite o e-mail do usuário: ')
-            if nome.isalpha() and '@' and '.' in email:
+            if nome.isalpha() and '@' in email and '.' in email:
                 register_user(nome, email)
             else:
                 print('Informe um nome ou e-mail válido.')
         elif op == 2:
             remover_user(input('Digite o nome a ser removido: '))
-            print('Usuário removido')
         elif op == 3:
             exibir()
         elif op == 4:
@@ -33,6 +32,7 @@ def register_user(nome, email):
 def remover_user(nome):
     if nome in users:
         del users[nome]
+        print('Usuário removido')
     else:
         print('Digite um nome válido.')
 
