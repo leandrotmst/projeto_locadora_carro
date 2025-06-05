@@ -6,8 +6,8 @@ def main():
     while True:
         try:
             carro_nome = input('Digite o modelo do carro: ')
-            dias = int(input('Digite o número de dias que o usuário quer alugar o carro: '))
             if carro_nome in dict_carros:
+                dias = int(input('Digite o número de dias que o usuário quer alugar o carro: '))
                 ano = int(input('Digite o ano do carro (2024 - 2025): '))
                 preco = buscar_preco(carro_nome, ano)
                 calcular_preco(dias, preco)
@@ -20,13 +20,10 @@ def main():
 
 def buscar_preco(carro_nome, ano):
         preco = dict_carros[carro_nome]
-        if ano < 2024 or ano > 2025:
-            print('Digite um ano possível.')
-        elif ano == 2024:
+        if ano == 2024:
             preco -= 2
             return preco
         elif ano == 2025:
-            preco = preco
             return preco
         else:
             print('Digite um ano possível.')
