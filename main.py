@@ -10,11 +10,15 @@ def main(menu: tuple):
         '1. Registrar usuário',
         '2. Remover usuário',
         '3. Exibir usuário',
+		'4. Voltar ao menu principal',
+		'5. Sair'
     )   
 	while True:
-		op = u.show_menu(menu, 1, 4)
+		op = u.show_menu(menu, 1, 5)
 		if op == 1:
-			ru.register(menu_register)
+			action = ru.register(menu_register)
+			if action == 'EXIT_SYSTEM':
+				break
 		elif op == 2:
 			ca.main()
 		elif op == 3:
@@ -24,8 +28,7 @@ def main(menu: tuple):
 		elif op == 5:
 			print('Obrigado, volte sempre!!')
 			break
-		else:
-			print('Faça uma escolha dentre as opções.')
+
 
 if __name__ == '__main__':
 	menu = (
