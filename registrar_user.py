@@ -13,7 +13,9 @@ def register(menu:tuple):
                 register_user(nome, email)
                 print(f"Usuário {nome} registrado com sucesso!")
             else:
-                print('Informe um nome ou e-mail válido.')
+                print()
+                print('INFORME UM NOME OU E-MAIL VÁLIDO!')
+                print()
         elif op == 2:
             remover_user(input('Digite o nome a ser removido: '))
         elif op == 3:
