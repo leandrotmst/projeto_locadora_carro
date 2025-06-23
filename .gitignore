@@ -1,0 +1,23 @@
+# Ignorar arquivos temporários e de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar ambientes virtuais
+venv/
+.env/
+env/
+
+# Ignorar arquivos de dados gerados
+*.xlsx
+__pycache__/
+*.pyc
+
+# Ignorar logs, se houver
+*.log
+
+# Ignorar notebooks Jupyter, se estiver usando
+.ipynb_checkpoints/
+
+# Ignorar arquivos específicos do IDE (Ex: VS Code, IntelliJ)
+.vscode/
+.idea/
